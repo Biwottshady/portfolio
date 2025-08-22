@@ -69,7 +69,7 @@ with col2:
    # 🔹 Projects / Accomplishments Link (same tab redirect)
 st.markdown(
     '<p class="subtitle">📂 Explore my completed projects: '
-    '<a href="https://dashboardpy-expaujbwiwbtqyq3sws.streamlit.app/" '
+    '<a href="https://portfolio-ayrwvav4yzyu2zhwtasu2e.streamlit.app/" '
     'style="color:#1a73e8; font-weight:600; text-decoration:none;">View Projects</a></p>',
     unsafe_allow_html=True
 )
