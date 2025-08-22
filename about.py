@@ -68,13 +68,13 @@ with col2:
     # 🔹 Projects / Accomplishments Link
     st.markdown(
         '<p class="subtitle">📂 Explore my completed projects: '
-        '<a href="https://github.com/your-username?tab=repositories" target="_blank" '
+        '<a href="https://dashboardpy-expaujbwiwbtqyq3kz5sws.streamlit.app/" target="_blank" '
         'style="color:#1a73e8; font-weight:600;">View Projects</a></p>',
         unsafe_allow_html=True
     )
 
     # Optional button version (cleaner look)
-    st.link_button("🚀 View My Projects", "https://github.com/your-username?tab=repositories")
+    st.link_button("🚀 View My Projects", "https://dashboardpy-expaujbwiwbtqyq3kz5sws.streamlit.app/")
 
 # About Me
 st.markdown('<div class="section-title">👋 About Me</div>', unsafe_allow_html=True)
