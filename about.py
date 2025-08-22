@@ -65,16 +65,10 @@ with col2:
     st.markdown('<div class="main-title">Shadrack Kiprop – Data Solutions with Impact</div>', unsafe_allow_html=True)
     st.markdown('<div class="main-subtitle">Transforming data into decisions using Python, Power BI, Excel, and cloud tools.</div>', unsafe_allow_html=True)
 
-    # 🔹 Projects / Accomplishments Link
-    st.markdown(
-        '<p class="subtitle">📂 Explore my completed projects: '
-        '<a href="https://dashboardpy-expaujbwiwbtqyq3kz5sws.streamlit.app/" target="_blank" '
-        'style="color:#1a73e8; font-weight:600;">View Projects</a></p>',
-        unsafe_allow_html=True
-    )
-
-    # Optional button version (cleaner look)
-    st.link_button("🚀 View My Projects", "https://dashboardpy-expaujbwiwbtqyq3kz5sws.streamlit.app/")
+    # 🔹 Projects / Accomplishments Button (same tab redirect)
+    if st.button("🚀 View My Projects"):
+        js = "window.location.href = 'https://dashboardpy-expaujbwiwbtqyq3sws.streamlit.app/';"
+        st.markdown(f"<script>{js}</script>", unsafe_allow_html=True)
 
 # About Me
 st.markdown('<div class="section-title">👋 About Me</div>', unsafe_allow_html=True)
