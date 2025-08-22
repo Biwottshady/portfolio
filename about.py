@@ -57,11 +57,24 @@ st.markdown('<div class="main">', unsafe_allow_html=True)
 
 # Header Section
 col1, col2 = st.columns([1, 3])
+
 with col1:
     st.image(image, caption="Shadrack Kiprop", use_column_width=True)
+
 with col2:
     st.markdown('<div class="main-title">Shadrack Kiprop – Data Solutions with Impact</div>', unsafe_allow_html=True)
     st.markdown('<div class="main-subtitle">Transforming data into decisions using Python, Power BI, Excel, and cloud tools.</div>', unsafe_allow_html=True)
+
+    # 🔹 Projects / Accomplishments Link
+    st.markdown(
+        '<p class="subtitle">📂 Explore my completed projects: '
+        '<a href="https://github.com/your-username?tab=repositories" target="_blank" '
+        'style="color:#1a73e8; font-weight:600;">View Projects</a></p>',
+        unsafe_allow_html=True
+    )
+
+    # Optional button version (cleaner look)
+    st.link_button("🚀 View My Projects", "https://github.com/your-username?tab=repositories")
 
 # About Me
 st.markdown('<div class="section-title">👋 About Me</div>', unsafe_allow_html=True)
@@ -99,7 +112,7 @@ st.markdown("""
 </ul>
 """, unsafe_allow_html=True)
 
-# Services (optional – you can move this if needed)
+# Services
 st.markdown('<div class="section-title">🚀 What I Do</div>', unsafe_allow_html=True)
 
 cols = st.columns(2)
