@@ -66,9 +66,14 @@ with col2:
     st.markdown('<div class="main-subtitle">Transforming data into decisions using Python, Power BI, Excel, and cloud tools.</div>', unsafe_allow_html=True)
 
     # 🔹 Projects / Accomplishments Button (same tab redirect)
-    if st.button("🚀 View My Projects"):
-        js = "window.location.href = 'https://dashboardpy-expaujbwiwbtqyq3sws.streamlit.app/';"
-        st.markdown(f"<script>{js}</script>", unsafe_allow_html=True)
+   # 🔹 Projects / Accomplishments Link (same tab redirect)
+st.markdown(
+    '<p class="subtitle">📂 Explore my completed projects: '
+    '<a href="https://dashboardpy-expaujbwiwbtqyq3sws.streamlit.app/" '
+    'style="color:#1a73e8; font-weight:600; text-decoration:none;">View Projects</a></p>',
+    unsafe_allow_html=True
+)
+
 
 # About Me
 st.markdown('<div class="section-title">👋 About Me</div>', unsafe_allow_html=True)
